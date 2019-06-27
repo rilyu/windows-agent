@@ -124,6 +124,18 @@ func ParseConfig(cfg string) {
 		log.Fatalln("parse config file:", cfg, "fail:", err)
 	}
 
+  // 20190627 agent 合并后兼容 cfg 文件，未配置则取默认值
+  if c.Logfile == "" {
+    c.Logfile = "windows.log"
+  }
+  if c.IIs == nil {
+    c.IIs = new(IIsConfig)
+  }
+  if c.MsSQL == nil {
+    c.MsSQL = new(MsSQLConfig)
+  }
+
+
 	lock.Lock()
 	defer lock.Unlock()
 
