@@ -3,7 +3,7 @@ package cron
 import (
 	"time"
 
-	"github.com/freedomkk-qfeng/windows-agent/g"
+	"github.com/rilyu/windows-agent/g"
 	"github.com/open-falcon/common/model"
 )
 

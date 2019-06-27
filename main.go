@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/freedomkk-qfeng/windows-agent/cron"
-	"github.com/freedomkk-qfeng/windows-agent/funcs"
-	"github.com/freedomkk-qfeng/windows-agent/g"
-	"github.com/freedomkk-qfeng/windows-agent/http"
+	"github.com/rilyu/windows-agent/cron"
+	"github.com/rilyu/windows-agent/funcs"
+	"github.com/rilyu/windows-agent/g"
+	"github.com/rilyu/windows-agent/http"
 )
 
 func main() {
