@@ -30,7 +30,7 @@ func InitLog() {
 	fileName := Config().Logfile
 	logFile, err := os.Create(fileName)
 	if err != nil {
-		log.Fatalln("open file error !")
+		log.Fatalf("open file %s error !", fileName)
 	}
 	logger = log.New(logFile, "[Debug]", log.LstdFlags)
 	log.Println("logging on", fileName)
